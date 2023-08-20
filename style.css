@@ -1,0 +1,170 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    box-sizing: inherit;
+    flex-wrap: wrap;
+    
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: calc(var(--font-body-scale) * 62.5%);
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.barraarribadeltodo {
+    display: grid;
+    place-items: center;
+    box-sizing: inherit;
+    background: #D9D9D9;
+}
+
+.logosrm {
+    display: grid;
+    place-items: center;
+}
+
+.barramenu {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 73.44%, rgba(212, 212, 212, 0.72) 100%);
+}
+
+.barracategorias2 {
+    display: grid;
+    place-items: center;
+    box-sizing: inherit;
+    flex-wrap: wrap;
+}
+
+.barracategorias3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #5C5C5C;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.letrascategorias{
+    padding-left:10px;
+    padding-right:10px
+}
+
+.introduccion{
+    display: grid;
+    place-items: center;
+    box-sizing: inherit;
+    flex-wrap: wrap;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fotografia{
+    width:  280px;
+    height: 280px;
+    border-radius: 360px;
+    padding-top: 15px;
+}
+
+.ficha{
+    margin: 20px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    /* border-style: solid; */
+    background-color: rgb(242,242, 242);
+    /* border-radius: 25px; */
+    display: grid;
+    place-items: center;
+    box-sizing: inherit;
+    flex-wrap: wrap;
+}
+
+.contenficha{
+    list-style: none;
+
+}
+
+.barracontacto {
+    color: #5C5C5C;
+    font-size: 13px;
+    font-weight: 400;
+    list-style: none;
+}
+
+footer{
+    background-color: #F6F8FA;
+        width: 100%;
+        height: 205px;
+}
+
+.parrafosfooter{
+    color: #5C5C5C;
+    font-size: 10px;
+}
+
+p{
+        text-align: justify;
+        text-justify: inter-word;
+        padding: auto;
+        margin: 15px;;
+}
+
+.listasinformato{
+    list-style: none;
+
+}
+
+.diseno{
+    display: grid;
+    place-items: center;
+    box-sizing: inherit;
+    background: #D9D9D9;
+}
+
+a {
+    color: #000000; /* Color de enlaces no visitados */
+    text-decoration: none; /* Quita el subrayado por defecto */
+}
+
+a:hover {
+    color: #FF0000; /* Color al pasar el cursor sobre el enlace */
+}
+
+a:active {
+    color: blue; /* Color cuando el enlace está activo (haciendo clic) */
+}
