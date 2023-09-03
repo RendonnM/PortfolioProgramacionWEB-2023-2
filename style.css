@@ -485,3 +485,85 @@ footer {
     background-image: url(./resources/nohay.png);
     background-size: 100% 100%;
 }
+
+.sectcontact {
+    display: flex;
+    padding-left: 182px;
+    padding-right: 182px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: linear-gradient(180deg, #181823 0%, rgba(24, 24, 35, 0.00) 100%);
+}
+
+.titlecontact {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.pcontact {
+    color: var(--light-grey, #8491A0);
+    font-size: 18px;
+}
+
+.formsection {
+    display: block;
+    padding-top: 50px;
+    padding-left: 24px;
+}
+
+.labelitemsform {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.inputitemsform {
+    width: 526px;
+    height: 50px;
+    background: var(--level-1, #181823);
+    color: white;
+}
+
+.inputitemsform2 {
+    width: 526px;
+    height: 100px;
+    background: var(--level-1, #181823);
+    color: white;
+}
+
+.enviarform {
+    color: #fff;
+    border: none;
+    background: var(--purple, #5221E6);
+    font-size: 18px;
+    font-weight: 700;
+    width: 534px;
+    height: 100px;
+}
+
+.enviarform:hover {
+    background-color: #181823
+}
+
+.enviarform:active {
+    background-color: rgb(16, 16, 16);
+    box-shadow: 0 5px #fff;
+    transform: translateY(1px);
+}
+
+.footerdesc {
+    color: #8491A0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.conticonsfooter {
+    display: flex;
+    padding-left: 650px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconsfooter {
+    width: 24px;
+    height: 24px;
+}
