@@ -160,3 +160,33 @@ footer {
 .desccompany {
     width: 85%;
 }
+
+.Filosofia {
+    display: inline-flex;
+}
+
+.artphilosopy {
+    background-color: #FFF3E4;
+    padding-left: 72px;
+    padding-top: 120px;
+}
+
+.titlephy {
+    font-size: 55px;
+    color: #181823;
+}
+
+.pphy {
+    font-size: 18px;
+    color: #5B6876;
+    width: 85%;
+}
+
+.pmabt {
+    color: black;
+}
+
+.imgphilosophy {
+    width: 720px;
+    height: 600px;
+}
