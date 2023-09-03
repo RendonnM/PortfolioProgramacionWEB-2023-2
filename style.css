@@ -190,3 +190,75 @@ footer {
     width: 720px;
     height: 600px;
 }
+
+.skillsection {
+    display: flex;
+    padding: 72px;
+}
+
+.skilltitle {
+    font-size: 55px;
+}
+
+.pskill {
+    color: var(--light-grey, #8491A0);
+    width: 87%;
+}
+
+.pskill2 {
+    color: var(--light-grey, #8491A0);
+    font-size: 16px;
+    width: 85%
+}
+
+.icon1 {
+    height: 70px;
+    width: 70px;
+}
+
+.techsection {
+    display: block;
+}
+
+.skillcontainer {
+    display: flex;
+}
+
+.imgpython {
+    padding-top: 15px;
+}
+
+.imgmongo {
+    width: 313px;
+    height: 79px;
+}
+
+.imgsap {
+    width: 227px;
+    height: 112px;
+}
+
+.descskill {
+    color: var(--light-grey, #8491A0);
+    font-size: 16px;
+    width: 89%;
+}
+
+
+.letrascategorias {
+    color: var(--white, #FFF);
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Sen;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360.333px;
+    height: 205px;
+    border: 1px solid var(--level-1, #181823);
+}
