@@ -88,3 +88,75 @@ footer {
     font-style: normal;
     font-weight: lighter;
 }
+
+.workexp {
+    display: block;
+    padding-left: 20px;
+}
+
+.workexptitle {
+    font-weight: 700;
+    color: var(--light-grey, #8491A0);
+}
+
+.workexpdesc {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.enterpexp {
+    display: flex;
+    flex-direction: row;
+}
+
+.logomattelsa {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: lighten;
+}
+
+.logointernexa {
+    width: 50%;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.logotennis {
+    width: 50%;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    mix-blend-mode: lighten;
+}
+
+.workdesc {
+    display: flex;
+    justify-content: center;
+}
+
+.companycont {
+    display: inline-block;
+    width: 50%;
+}
+
+.companydatosprinc {
+    display: flex;
+}
+
+.titlemattelsa {
+    color: var(--green, #3CC74E);
+}
+
+.titleinternexa {
+    color: #609BFF;
+}
+
+.titletennis {
+    color: var(--pink, #E95D90);
+}
+
+.desccompany {
+    width: 85%;
+}
