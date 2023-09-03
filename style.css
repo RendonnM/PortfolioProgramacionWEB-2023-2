@@ -262,3 +262,148 @@ footer {
     height: 205px;
     border: 1px solid var(--level-1, #181823);
 }
+
+.projects {
+    border: 1px solid #181823;
+    background: linear-gradient(180deg, rgba(46, 19, 126, 0.15) 0%, rgba(0, 0, 0, 0.56) 100%);
+    padding-bottom: 56px;
+}
+
+.sectproject {
+    padding: 44px 158px 41px 158px;
+}
+
+.titleproject {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.pproject {
+    width: 50%;
+    color: var(--Light-Grey, #8491A0);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contenedorfichas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 66px 20px 66px;
+}
+
+.ficha1 {
+    width: 410.033px;
+    height: 651.854px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(228, 207, 255, 0.17);
+}
+
+.ficha2 {
+    width: 625px;
+    height: 488.873px;
+    flex-shrink: 0;
+    background-image: url(./resources/design1.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(228, 207, 255, 0.17);
+}
+
+.datosficha1 {
+    width: 410px;
+    height: 227.2px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.40);
+    margin-top: 424.50px;
+    text-align: start;
+}
+
+.datosficha2 {
+    width: 625px;
+    height: 170.516px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.40);
+    margin-top: 318px;
+    text-align: start;
+}
+
+.tituloficha {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tituloficha2 {
+    padding-top: 20px;
+}
+
+.descficha {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 208.333% */
+    padding: 0px 26px 0px 26px;
+}
+
+.contfinalficha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 26px 15px 26px;
+}
+
+.finalficha1 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 192.308% */
+}
+
+.finalficha2 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 192.308% */
+}
+
+.design1 {
+    background-image: url(./resources/design1.png);
+    background-size: 100% 100%;
+}
+
+.design2 {
+    background-image: url(./resources/design2.png);
+    background-position: center;
+    background-size: 222.809% 100%;
+}
+
+.design3 {
+    background-image: url(./resources/design3.png);
+    background-size: 100% 100%;
+}
+
+.design4 {
+    background-image: url(./resources/nohay.png);
+    background-size: 100% 100%;
+}
+
+.design5 {
+    background-image: url(./resources/nohay.png);
+    background-size: 100% 100%;
+}
