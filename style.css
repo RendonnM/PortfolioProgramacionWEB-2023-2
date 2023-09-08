@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Sen';
+    src: url('./Sen-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
     font-family: Sen;
     color: var(--white, #FFF);
@@ -16,6 +21,10 @@ footer {
     display: flex;
     background-color: #181823;
 }
+
+a {
+    text-decoration: none;
+  }
 
 .Inicio {
     background: linear-gradient(180deg, #181823 0%, rgba(24, 24, 35, 0.00) 100%);
@@ -43,6 +52,7 @@ footer {
 .contact {
     font-weight: 700;
     font-style: normal;
+    color: white;
 }
 
 .contactbanner {
@@ -67,18 +77,21 @@ footer {
 .datospresentation {
     padding-left: 38px;
     align-items: center;
+    align-content: center;
     padding-block: 1px;
 }
 
 .nombreprincipal {
     font-weight: 700;
     font-size: 76px;
-    line-height: 90%
+    line-height: 90%;
+    margin-bottom: -50px;
+
 }
 
 .cargoprincipal {
     color: #B881FF;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 60px;
 }
 
@@ -566,4 +579,77 @@ footer {
 .iconsfooter {
     width: 24px;
     height: 24px;
+}
+
+/* ================================CONSULTA 1 ====================================== */
+
+.consulta{
+    padding: 15px 72px 15px 72px;
+}
+
+.encabezadoconsulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numconsulta{
+    font-size: 52px;
+    margin-bottom: 1px;
+}
+
+.titleconsulta{
+    font-size: 32px;
+    color: #B881FF;
+    margin-top: 0px;
+}
+
+.contenidoconsulta{
+    background: linear-gradient(180deg, #181823 0%, rgba(24, 24, 35, 0.00) 100%);
+}
+
+.contenidoconsulta2{
+    background: linear-gradient(180deg, rgba(24, 24, 35, 0.00) 0%, #181823 100%);
+}
+
+.sectprotocolos1{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 72px 15px 72px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.sectprotocolos2{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 72px 15px 72px;
+    align-items: center;
+}
+
+
+
+.tituloprot{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pprot1{
+    width: 90%;
+    color: var(--Light-Grey, #8491A0);
+}
+
+.pprot2{
+    width: 100%;
+    color: var(--Light-Grey, #8491A0);
+}
+
+
+.imgconsulta1{
+    width: 50%;
+    height: 50%;
+}
+
+.protright{
+    padding-left: 60px;
 }
