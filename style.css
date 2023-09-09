@@ -50,7 +50,7 @@ a {
 }
 
 .contact {
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     color: white;
 }
@@ -433,7 +433,7 @@ a {
 }
 
 .consultation3 {
-    background-image: url(./resources/nohay.png);
+    background-image: url(./resources/lp5.webp);
     background-size: 100% 100%;
 }
 
@@ -694,4 +694,38 @@ a {
     font-size: 20px;
     font-weight: 300;
     color: var(--Light-Grey, #8491A0);
+}
+
+/* ================================CONSULTA 2 ====================================== */
+
+.contenidotarea3{ 
+    padding: 0px 90px 15px 90px;
+}
+
+.lp2{
+    width: 70%;
+    height: auto;
+}
+
+.imgcent3{
+    display: flex;
+    justify-content: center;
+}
+
+.lcons31{
+    color: #609BFF;
+}
+
+.lcons3{
+    color: #B881FF;
+}
+
+.imgcons3{
+    box-shadow: 0px 0px 10px 0px rgba(228, 207, 255, 0.17);
+}
+
+.contparrconsulta3fin{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 150px 25px 150px;
 }
