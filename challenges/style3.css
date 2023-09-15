@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('./resources/NetflixSans-Regular.otf') format('truetype');
+}
+
+html {
+    padding: 0;
+}
+
+body {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background: #141414;
+    color: white;
+    top: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 0px 2.5% 0px 2.5%;
+    height: auto;
+    min-height: 70px;
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+
+header.headerup {
+    background-color: #141414;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 0;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstnav {
+    display: flex;
+    flex-direction: row;
+}
+
+.secnav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    padding: 2px;
+    right: 4%;
+    gap: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.profilenav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainpiccontainer {
+    object-position: center;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    z-index: -10;
+}
+
+.mainimg {
+    size: 100% 0;
+}
+
+.mainmovieinfo {
+    margin-top: 200px;
+    padding: 0px 3% 0px 3%;
+    z-index: -30;
+}
+
+.picmainmovie {
+    width: 98.9vw;
+    height: 100vh;
+}
+
+.mainpictitle {
+    width: 25%;
+    height: 30%;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .45));
+}
+
+.mainpictdesc {
+    width: 30%;
+    font-size: 1.2vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.repmainbutton {
+    width: 12%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #FFFFFF;
+    border-width: 0px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-radius: 5px;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.moremainbutton {
+    width: 17%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(109, 109, 110, 0.7);
+    border-width: 0px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-radius: 5px;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+.newl {
+    padding: 0px 3% 0px 3%;
+}
+
+.box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box a {
+    transition: transform .3s;
+}
+
+.box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.box img {
+    border-radius: 2px;
+    width: 15vw;
+}
+
+.box2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box2 a {
+    transition: transform .3s;
+}
+
+.box2 a:hover {
+
+    transition: transform .3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.box2 div {
+    border-radius: 2px;
+    width: 15vw;
+}
+
+.topcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.topcont img {
+    height: 12vw;
+    bottom: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.topcont svg {
+    /* width: auto; */
+    height: 12vw;
+}
+
+.rowtitle {
+    font-size: 1.4vw;
+}
