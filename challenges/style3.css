@@ -1,6 +1,17 @@
 @font-face {
     font-family: 'Netflix Sans';
-    src: url('./resources/NetflixSans-Regular.otf') format('truetype');
+    font-weight: 400;
+    src: url('./resources/netflix/NetflixSans_W_Rg.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('./resources/netflix/NetflixSans_W_Md.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('./resources/netflix/NetflixSans_W_Bd.woff2') format('woff2');
+    font-weight: 600;
 }
 
 html {
@@ -29,6 +40,7 @@ header {
     min-height: 70px;
     z-index: 1;
     transition: 0.5s linear;
+    /* font-weight: 500; */
 }
 
 
@@ -37,10 +49,14 @@ header.headerup {
 }
 
 a {
-    color: white;
+    color: #e5e5e5;;
     text-decoration: none;
     font-size: 14px;
     font-weight: 0;
+}
+
+a :hover {
+    font-weight: 900;
 }
 
 .fila {
@@ -51,6 +67,7 @@ a {
 .firstnav {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .secnav {
@@ -69,15 +86,21 @@ a {
 }
 
 .profile {
-    width: 40px;
-    height: 40px;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
+}
+
+.navbar li :hover{
+    color: #ababab;
+    transition: color .5s;
 }
 
 .profilenav {
@@ -91,7 +114,6 @@ a {
     object-position: center;
     position: absolute;
     top: 8px;
-    bottom: 0;
     z-index: -10;
 }
 
@@ -120,6 +142,14 @@ a {
     width: 30%;
     font-size: 1.2vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.shadow{
+    position: absolute;
+    width: 98.9vw;
+    height: 118px;
+    box-shadow: 0px -70px 50px 0px #141414 inset;
+    z-index: -1;
 }
 
 .buttons {
@@ -236,5 +266,7 @@ a {
 }
 
 .rowtitle {
+    font-weight: 500;
     font-size: 1.4vw;
+    color: #e5e5e5;
 }

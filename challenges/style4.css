@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Bingo1';
+    src: url('./resources/bingo/Bonello-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: Bingo1, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background: white;
+    color: black;
+    top: 0px;
+    overflow-x: hidden;
+}
+
+
+table {
+    float:left;
+    margin:20px;
+    background-color: #4bb4ff;
+  }
+  table td {
+    border:1px #aaa solid;
+    margin:1px;
+    padding:3px 5px;
+    text-align:center;
+    color: black;
+    background-color: white;
+    font-size: large;
+  }
+  table tr:nth-child(3) td:nth-child(3) {
+    border:1px white solid;
+    background:rgb(222, 222, 222);
+    color: black;
+  }
+
+  table tr{
+    font-size: xx-large;
+    color: white;
+  }
