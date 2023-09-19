@@ -488,12 +488,14 @@ a {
 }
 
 .challenge3 {
-    background-image: url(./resources/nohay.png);
-    background-size: 100% 100%;
+    background-image: url(./resources/bingo.png);
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .challenge4 {
-    background-image: url(./resources/nohay.png);
+    background-image: url(./resources/design3.png);
     background-size: 100% 100%;
 }
 

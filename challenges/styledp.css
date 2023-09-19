@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./resources/deportesext/Inter-VariableFont_slnt\,wght.ttf), format('truetype');
+}
+
+body {
+    margin-left: -9px;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: Inter, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    top: 0px;
+}
+
+header ul {
+    width: 100%;
+    height: 8vh;
+    object-position: center;
+    position: absolute;
+    top: -24px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    backdrop-filter: blur(3px);
+}
+
+header a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.pageinfo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pageinfo h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.pageinfo p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 0px;
+    /* 150% */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.contbanner {
+    object-position: center;
+    position: absolute;
+    top: -8px;
+    z-index: -10;
+    width: 100vw;
+    height: 40vh;
+}
+
+.banner {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1.5px);
+}
+
+.actividades {
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 74px;
+
+}
+
+.actividades h1 {
+    text-align: center;
+}
+
+.title {
+    background: linear-gradient(180deg, rgba(94, 94, 94, 0.37) 0%, rgba(217, 217, 217, 0.00) 31.77%);
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.foto {
+    margin-bottom: -4px;
+    width: 101vw;
+    height: 100vh;
+}
+
+.contexp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.exp {
+    padding: 0px 0px 0px 109px;
+}
+
+.exp h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.exp p {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contenedorfichas {
+    display: flex;
+    justify-content: center;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+
+.contenedorfichas2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contenedorfichas2 a {
+    text-decoration: none;
+}
+
+.ficha11 {
+    width: 307.514px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.7);
+}
+
+.ficha1 {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+}
+
+.ficha2 {
+    width: 625px;
+    height: 488.873px;
+    flex-shrink: 0;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.7);
+}
+
+.datosficha1 {
+    margin-top: 400px;
+    width: 410px;
+    height: 227.2px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.40);
+    text-align: start;
+}
+
+.datosficha11 {
+    margin-top: 400px;
+    width: 307.1px;
+    height: 227.2px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.40);
+    text-align: start;
+    padding-bottom: 20px;
+}
+
+.datosficha2 {
+    width: 625px;
+    height: 170.516px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.40);
+    margin-top: 318px;
+    text-align: start;
+}
+
+.tituloficha {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tituloficha2 {
+    padding-top: 20px;
+}
+
+.descficha {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 208.333% */
+    padding: 0px 26px 0px 26px;
+}
+
+.contfinalficha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 26px 15px 26px;
+}
+
+.finalficha1 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 192.308% */
+}
+
+.finalficha2 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 192.308% */
+}
+
+.dep1 {
+    background-image: url(./resources/deportesext/dp1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dep2 {
+    background-image: url(./resources/deportesext/dp2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.dep3 {
+    background-image: url(./resources/deportesext/dp3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dep4 {
+    background-image: url(./resources/deportesext/dp4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.paqaloj1 {
+    background-image: url(./resources/deportesext/aloj1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.paqaloj2 {
+    background-image: url(./resources/deportesext/aloj2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.coach {
+    background-image: url(./resources/deportesext/kt.png);
+    background-size: 100% 100%;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    gap: 100px;
+}
+
+.seguridad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.pseguridad {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 228px 0px 228px;
+    margin-bottom: 50px;
+}
+
+.continv {
+    width: 101%;
+    height: 100vh;
+    object-position: center;
+    position: absolute;
+    z-index: -10;
+}
+
+.inv {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.infoinv {
+    object-position: center;
+    position: absolute;
+    z-index: -5;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 228px 0px 228px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.infoinv h1 {
+    font-size: 54.93px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.infoinv p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.b1 {
+    font-family: Inter, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    width: 200px;
+    height: 56px;
+    color: white;
+    background-color: #FF8400;
+}
+
+.b2 {
+    font-family: Inter, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    width: 200px;
+    height: 56px;
+    color: white;
+    background-color: rgba(109, 109, 110, 0.7);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    width: 101%;
+    height: 69px;
+    object-position: center;
+    position: absolute;
+    z-index: -5;
+    margin-top: 765px;
+    color: white;
+    background-color: #00162B;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.netw {
+    width: 40px;
+    height: 40px;
+}
