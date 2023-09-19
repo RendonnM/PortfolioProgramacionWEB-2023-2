@@ -3,11 +3,13 @@
     font-weight: 400;
     src: url('./resources/netflix/NetflixSans_W_Rg.woff2') format('woff2');
 }
+
 @font-face {
     font-family: 'Netflix Sans';
     src: url('./resources/netflix/NetflixSans_W_Md.woff2') format('woff2');
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'Netflix Sans';
     src: url('./resources/netflix/NetflixSans_W_Bd.woff2') format('woff2');
@@ -40,7 +42,6 @@ header {
     min-height: 70px;
     z-index: 1;
     transition: 0.5s linear;
-    /* font-weight: 500; */
 }
 
 
@@ -49,7 +50,8 @@ header.headerup {
 }
 
 a {
-    color: #e5e5e5;;
+    color: #e5e5e5;
+    ;
     text-decoration: none;
     font-size: 14px;
     font-weight: 0;
@@ -67,7 +69,6 @@ a :hover {
 .firstnav {
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 .secnav {
@@ -91,6 +92,10 @@ a :hover {
     height: 32px;
 }
 
+.profiletriangle:hover {
+    transform: rotate(180deg);
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -98,7 +103,7 @@ a :hover {
     gap: 20px;
 }
 
-.navbar li :hover{
+.navbar li :hover {
     color: #ababab;
     transition: color .5s;
 }
@@ -115,6 +120,7 @@ a :hover {
     position: absolute;
     top: 8px;
     z-index: -10;
+    
 }
 
 .mainimg {
@@ -122,9 +128,10 @@ a :hover {
 }
 
 .mainmovieinfo {
-    margin-top: 200px;
+    margin-top: 130px;
     padding: 0px 3% 0px 3%;
     z-index: -30;
+    margin-bottom: 8%;
 }
 
 .picmainmovie {
@@ -144,11 +151,12 @@ a :hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
 }
 
-.shadow{
+.shadow {
     position: absolute;
     width: 98.9vw;
-    height: 118px;
-    box-shadow: 0px -70px 50px 0px #141414 inset;
+    height: 170px;
+    box-shadow: 0px -50px 12px 0px #141414 inset; 
+    /* box-shadow: 0px -50px 10px 0px #141414 inset; */
     z-index: -1;
 }
 
@@ -158,8 +166,13 @@ a :hover {
     gap: 10px;
 }
 
-.repmainbutton {
+.repabutton{
     width: 12%;
+    height: 40px;
+}
+
+.repmainbutton {
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -177,8 +190,17 @@ a :hover {
     font-weight: 600;
 }
 
-.moremainbutton {
+.repmainbutton:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.moreabutton{
     width: 17%;
+    height: 40px;
+}
+
+.moremainbutton {
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -195,6 +217,10 @@ a :hover {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 90px;
+}
+
+.moremainbutton:hover{
+    background-color: rgba(109, 109, 110, 0.4);
 }
 
 .newl {
@@ -269,4 +295,95 @@ a :hover {
     font-weight: 500;
     font-size: 1.4vw;
     color: #e5e5e5;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2.5% 0px 2.5%;
+    margin: 20px 172px 0px 172px;
+    justify-content: center;
+}
+
+footer article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: grey;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+footer ul{
+    list-style: none;   
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.infofooter{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.socialnetworks{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.licont{
+    display: list-item;
+    flex-basis: 25%;
+    margin-bottom: 16px;
+}
+
+.licont:hover {
+    /* Estilos de subrayado */
+    text-decoration: underline grey;
+    ;
+  }
+
+.ftrli{
+    font-size: 13px;
+    color: grey;
+}
+.finalfooter{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-size: 13px;
+}
+
+.btfoot{
+    box-sizing: border-box;
+    width:fit-content;
+    height: 30px;
+    font-size: 13px;
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.copyr{
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+button{
+    cursor: pointer;
 }

@@ -751,6 +751,16 @@ a {
     border-radius: 5px;
     perspective: 1000px;
     box-shadow: rgba(255, 255, 255, 0.2) 10px 10px 10px 0px;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .termino,
