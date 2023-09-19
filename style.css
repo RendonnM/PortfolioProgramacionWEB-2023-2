@@ -504,6 +504,11 @@ a {
     background-size: 100% 100%;
 }
 
+.challenge6 {
+    background-image: url(./resources/nohay.png);
+    background-size: 100% 100%;
+}
+
 .sectcontact {
     display: flex;
     padding-left: 182px;
