@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo</title>
-    <link rel="stylesheet" href="./style4.css">
+    <link rel="stylesheet" href="./bingo.css">
 </head>
+
 <body>
-    <section>
-        <article id="bingo-cards" class="tarjeta"></article>
+    <section class="first">
+        <h1>BINGO ONLINE</h1>
+        <h3>Por: Santiago Rendon Munera</h3>
+        <p>¡Bienvenido al nuevo Bingo Online!</p>
+    </section>
+    <section class="second">
+        <article class="reglas">
+            <h2>¿Cómo jugar?</h2>
+            <p>Para jugar al Bingo Online, debes tener en cuenta las siguientes reglas:</p>
+            <ul>
+                <li>El juego consiste en completar una tarjeta con los números que van saliendo de un bombo.</li>
+                <li>El bombo contiene 75 balotas numeradas del 1 al 75.</li>
+                <li>El orden de salida de las balotas es aleatorio.</li>
+                <li>El juego termina cuando un jugador completa su tarjeta.</li>
+                <li>El jugador que completa su tarjeta, gana el juego.</li>
+            </ul>
+        </article>
+        <article class="reglas">
+            <h2>Configuración</h2>
+            <p>Selecciona los parámetros de configuración para jugar:</p>
+            <ul style="display: flex;flex-direction: row;">
+                <li>Numero de tarjetas: <input id="numtarjetas" type="number" class="numtarj" min="1" max="6" step="1"
+                        value="1"></li>
+                <li>Numero de rivales: <input id="numrivales" type="number" class="numtarj" min="1" max="6" step="1"
+                        value="1"></li>
+            </ul>
+            <div class="strt">
+                <input id="startgame" type="submit" value="Jugar" class="start">
+            </div>
+
+        </article>
     </section>
 
+    <section id="game" class="game" style="display: none;">
+        <section>
+            <h2>Bombo</h2>
+            <article class="contbombo">
+                <div id="bola" class="bombo"></div>
+                <div id="ganador-mensaje" style="display: none;">
+                    <p>¡BINGO!</p>
+                </div>
+            </article>
+        </section>
+
+        <article class="players">
+            <section class="contplayer" >
+                <h2>Tus tarjetas</h2>
+                <article class="conttarjetas">
+                    <div id="bingo-cards" class="tarjeta carton-container"></div>
+                </article>
+            </section>
+            <section class="contplayer" >
+                <h2>Otros jugadores</h2>
+                <article class="conttarjetas">
+                    <div id="bingo-cards2" class="tarjeta carton-container"></div>
+                </article>
+            </section>
+        </article>
+    </section>
 
 
 
     <script src="./resources/bingo/bingo.js">
     </script>
 </body>
+
 </html>
