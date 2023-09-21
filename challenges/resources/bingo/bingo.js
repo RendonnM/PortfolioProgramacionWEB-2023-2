@@ -8,10 +8,15 @@ inputSubmit.addEventListener('click', function () {
     }
     const numrivales = document.getElementById('numrivales').value;
     const numtarjetas = document.getElementById('numtarjetas').value;
+    const mensajeganador = document.getElementById('mensajeganador');
+    const idganador = document.getElementById('idganador');
+    const contwin = document.getElementById('contwin') // Corrección
+
     console.log('Empieza el juego')
+    mensajeganador.style.display = 'none';
+    contwin.style.display = 'none';
 
     function getBingoCard() {
-
         let arr = [
             [], // b (1-15)
             [], // i (16-30)
@@ -34,50 +39,69 @@ inputSubmit.addEventListener('click', function () {
         return arr;
     }
 
-    function cartones() {
+    let cartonIdCounter = 1;
 
-        return [
-            getBingoCard()
-        ]
+    function generateCartonId() {
+        console.log(cartonIdCounter);
+        return `Carton #${cartonIdCounter++}`;
+    }
+
+    function cartones() {
+        const cartonId = generateCartonId(); // Generar el ID del cartón
+        const carton = {
+            id: cartonId, // Almacenar el ID en el objeto carton
+            card: getBingoCard()
+        };
+        return [carton];
     }
 
     function cartones2() {
-
-        return [
-            getBingoCard()
-        ]
+        const cartonId = generateCartonId(); // Generar el ID del cartón
+        const carton = {
+            id: cartonId, // Almacenar el ID en el objeto carton
+            card: getBingoCard()
+        };
+        return [carton];
     }
 
     let cards = cartones();
     let cardsrivales = cartones2();
 
     for (let i = 1; i < numtarjetas; i++) {
-        cards.push(getBingoCard());
+        cards.push({
+            id: generateCartonId(),
+            card: getBingoCard()
+        });
     }
 
     for (let i = 1; i < numrivales; i++) {
-        cardsrivales.push(getBingoCard());
+        cardsrivales.push({
+            id: generateCartonId(),
+            card: getBingoCard()
+        });
     }
 
     let html = '';
     cards.forEach(card => {
         html += `
-      <table>
-      <thead>
-      <tr>
+    <article class="prueba">
+    <div><p style='margin-bottom:10px'>${card.id}</p>
+    <table data-id="${card.id}">
+    <thead>
+    <tr>
         <th>B</th>
         <th>I</th>
         <th>N</th>
         <th>G</th>
         <th>O</th>
-      </tr>
-      </thead>
-      <tbody>`;
+    </tr>
+    </thead>
+    <tbody>`;
         for (let i = 0; i < 5; i++) {
             html += `
-          <tr>`;
+        <tr>`;
             for (let j = 0; j < 5; j++) {
-                const numero = card[j][i];
+                const numero = card.card[j][i];
                 let claseNumero = `n${numero}`;
 
                 if (numero === bola) {
@@ -88,31 +112,33 @@ inputSubmit.addEventListener('click', function () {
             <td class="${claseNumero}">${numero}</td>`;
             }
             html += `
-          </tr>`;
-        }
-        html += '</tbody></table>';
+        </tr>`;
+        };
+        html += '</tbody></table></div></article>';
     });
     document.querySelector('#bingo-cards').innerHTML = html;
 
     let html2 = '';
     cardsrivales.forEach(card => {
         html2 += `
-      <table>
-      <thead>
-      <tr>
+    <article class="prueba">
+    <div><p style='margin-bottom:10px'>${card.id}</p>
+    <table data-id="${card.id}">
+    <thead>
+    <tr>
         <th>B</th>
         <th>I</th>
         <th>N</th>
         <th>G</th>
         <th>O</th>
-      </tr>
-      </thead>
-      <tbody>`;
+    </tr>
+    </thead>
+    <tbody>`;
         for (let i = 0; i < 5; i++) {
             html2 += `
-          <tr>`;
+        <tr>`;
             for (let j = 0; j < 5; j++) {
-                const numero = card[j][i];
+                const numero = card.card[j][i];
                 let claseNumero = `n${numero}`;
 
                 if (numero === bola) {
@@ -123,17 +149,18 @@ inputSubmit.addEventListener('click', function () {
             <td class="${claseNumero}">${numero}</td>`;
             }
             html2 += `
-          </tr>`;
-        }
-        html2 += '</tbody></table>';
+        </tr>`;
+        };
+        html2 += '</tbody></table></div></article>';
     });
     document.querySelector('#bingo-cards2').innerHTML = html2;
+    html2 = '';
 
     let newCards = [];
     for (let i = 0; i < cards.length; i++) {
         let simple = [];
-        for (x = 0; x < 5; x++) {
-            simple.push(...cards[i][x]);
+        for (let x = 0; x < 5; x++) {
+            simple.push(...cards[i].card[x]);
         }
         newCards.push(simple);
     }
@@ -195,9 +222,11 @@ inputSubmit.addEventListener('click', function () {
     }
 
     let ganadorEncontrado = false;
+    let idCartonGanador = null;
+
     function verificarGanador(cartones) {
         for (let i = 0; i < cartones.length; i++) {
-            const carton = cartones[i];
+            const carton = cartones[i].card; // Acceder a la propiedad 'card' del cartón
             let cartonCompleto = true;
 
             for (let columna = 0; columna < carton.length; columna++) {
@@ -219,9 +248,14 @@ inputSubmit.addEventListener('click', function () {
 
             if (cartonCompleto) {
                 ganadorEncontrado = true;
+                idCartonGanador = cartones[i].id; // Acceder al ID del cartón
 
-                const mensajeganador = document.getElementById('ganador-mensaje');
                 mensajeganador.style.display = 'block';
+                contwin.style.display = 'block';
+                idganador.textContent = idCartonGanador;
+
+                const cartonGanadorElement = document.querySelector(`table[data-id="${idCartonGanador}"]`);
+                cartonGanadorElement.classList.add('zoomed');
 
                 console.log("¡Tenemos un ganador! El cartón está completo.");
                 break;
@@ -229,7 +263,7 @@ inputSubmit.addEventListener('click', function () {
         }
 
         if (ganadorEncontrado) {
-            console.log("¡Tenemos un ganador! El cartón está completo.");
+            console.log(`¡Tenemos un ganador! El cartón ganador tiene el ID: ${idCartonGanador}`);
         } else {
             console.log("Ningún ganador todavía");
         }
@@ -243,6 +277,6 @@ inputSubmit.addEventListener('click', function () {
             clearInterval(intervalId);
             console.log("¡Tenemos un ganador!");
         }
-    }, 50);
+    }, 2000);
 
 });

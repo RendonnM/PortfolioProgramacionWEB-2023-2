@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo</title>
     <link rel="stylesheet" href="./bingo.css">
+    <link rel="icon" href="resources/bingo/bingologo.png">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 <li>Numero de tarjetas: <input id="numtarjetas" type="number" class="numtarj" min="1" max="6" step="1"
                         value="1"></li>
                 <li>Numero de rivales: <input id="numrivales" type="number" class="numtarj" min="1" max="6" step="1"
-                        value="1"></li>
+                        value="3"></li>
             </ul>
             <div class="strt">
                 <input id="startgame" type="submit" value="Jugar" class="start">
@@ -47,14 +48,18 @@
             <h2>Bombo</h2>
             <article class="contbombo">
                 <div id="bola" class="bombo"></div>
-                <div id="ganador-mensaje" style="display: none;">
-                    <p>¡BINGO!</p>
+                <div id="mensajeganador" style="display: none;" class="mensajeganador">
+                    <img src="./resources/bingo/bingologo.png" alt="" class="bingomensaje">
+                </div>
+                <div id="contwin" style="display: none;">
+                    <p class="ttilewin">Ganador: <span id="idganador" class="verde"></span></p>
                 </div>
             </article>
         </section>
 
         <article class="players">
             <section class="contplayer" >
+
                 <h2>Tus tarjetas</h2>
                 <article class="conttarjetas">
                     <div id="bingo-cards" class="tarjeta carton-container"></div>

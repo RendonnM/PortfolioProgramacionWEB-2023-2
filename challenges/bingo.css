@@ -1,72 +1,72 @@
 @font-face {
-    font-family: 'Bingo1';
-    src: url('./resources/bingo/Bonello-Regular.otf') format('truetype');
+  font-family: 'Bingo1';
+  src: url('./resources/bingo/Bonello-Regular.otf') format('truetype');
 }
 
 body {
-    font-family: Bingo1, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    background: rgb(6, 10, 39);
-    color: rgb(236, 253, 255);
-    top: 0px;
-    overflow-x: hidden;
+  font-family: Bingo1, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background: rgb(6, 10, 39);
+  color: rgb(236, 253, 255);
+  top: 0px;
+  overflow-x: hidden;
 }
 
-.first{
+.first {
   display: flex;
   flex-direction: column;
   text-align: center;
   line-height: 0px;
 }
 
-.first h3{
+.first h3 {
   color: rgba(3, 205, 255, 0.528);
   line-height: 0px;
 }
 
-.second{
+.second {
   margin: 10px 50px 10px 50px;
   border: #002038 1px solid;
   margin: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-shadow: #00000048 2px 2px 4px 2px;
+  box-shadow: #ffffff48 2px 2px 4px 2px;
 }
 
-.first h1{
+.first h1 {
   font-size: 50px;
   color: #0095ff;
   text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.214);
 }
 
-.first p{
+.first p {
   font-size: 32px;
   color: #f7f7f7;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.28);
 }
 
-.reglas{
+.reglas {
   display: flex;
   flex-direction: column;
   margin: 10px 112px 10px 75px;
 }
 
-.reglas h2{
+.reglas h2 {
   font-weight: 100;
   color: #abdcff;
 }
 
-.reglas p{
+.reglas p {
   font-weight: 100;
 }
 
-.reglas li{
+.reglas li {
   color: #e9f5ff;
   font-weight: 100;
   width: 90%;
 }
 
-.game{
+.game {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,126 +74,174 @@ body {
   margin: 10px 0px 10px 0px;
 }
 
-.players{
+.players {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
 }
 
 
-.contplayer{
+.contplayer {
   border: #002038 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  box-shadow: #ffffff48 1px 1px 2px 1px;
 }
 
-.conttarjetas{
+.contplayer h2{
+  color: white;
+}
+
+.tarjeta{
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.numtarj{
+.conttarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.numtarj {
   width: 150px;
   height: 50px;
   text-align: center;
   font-size: 20px;
 }
 
-.strt{
+.strt {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.start{
+.start {
   font-family: Bingo1, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-  background-color: #0091ff;
+  background: rgb(2,0,36);
+  background: linear-gradient(14deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
   color: white;
-  width: 150px;
+  width: 200px;
   height: 50px;
   font-size: x-large;
+  border-radius: 15px;
 }
 
 table {
-    float:left;
-    margin:20px;
-    background-color: #4bb4ff;
-    box-shadow: rgba(0, 0, 0, .2) 2px 2px 4px 2px;
-  }
-  table td {
-    border:1px #aaa solid;
-    margin:1px;
-    padding:3px 5px;
-    text-align:center;
-    color: black;
-    background-color: white;
-    font-size: large;
-  }
-  table tr:nth-child(3) td:nth-child(3) {
-    border:1px white solid;
-    background-image: url('./resources/bingo/estrella.avif');
-    background-size: 100% 100%;
-    background-position: center;
-  }
+  border: 1px #aaa solid;
+  float: left;
+  margin: 20px;
+  background-color: #4bb4ff;
+  box-shadow: rgba(255, 255, 255, 0.236) 2px 2px 4px 2px;
+}
 
-  table tr{
-    font-size: xx-large;
-    color: white;
-  }
+table td {
+  border: 1px #aaa solid;
+  margin: 1px;
+  padding: 3px 5px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: large;
+}
 
-  .contbombo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+table tr:nth-child(3) td:nth-child(3) {
+  border: 1px white solid;
+  background-image: url('./resources/bingo/estrella.avif');
+  background-size: 100% 100%;
+  background-position: center;
+}
 
-  .bombo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 0px 50px 0px;
-    color: white;
-    background-color: #0091ff;
-    font-size: 52px;
-    border-radius: 360px;
-    width: 80px;
-    border: white 0.5px solid;
-  }
+table tr {
+  font-size: xx-large;
+  color: white;
+}
 
-  .bombosmall{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 0px 50px 0px;
-    color: white;
-    background-color: #002038;
-    font-size: 32px;
-    border-radius: 360px;
-    width: 80px;
-  }
+.contbombo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bombo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+  font-size: 52px;
+  border-radius: 360px;
+  width: 80px;
+  border: white 0.5px solid;
+}
+
+.bombosmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+  color: white;
+  background-color: #002038;
+  font-size: 32px;
+  border-radius: 360px;
+  width: 80px;
+}
 
 .tachado {
-    text-decoration:line-through red 3px ;
+  text-decoration: line-through red 3px;
 }
 
 .zoomed {
-
-  transform: scale(1.05); 
-  transition: transform 0.5s ease; 
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+  box-shadow: rgba(0, 255, 47, 0.246) 2px 2px 4px 2px;
 }
 
-#ganador-mensaje{
+.contwin {
+  font-size: 24px;
+  color: rgb(0, 223, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.195);
+}
+
+.ttilewin{
+  font-size: 24px;
+  color: white;
+}
+
+.bingomensaje{
+  width: 50vh;
+  height: 30vh;
+  filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.195));
+  z-index: -30;
+  margin-bottom: 20px;
+}
+
+.mensajeganador{
   font-size: 38px;
   color: rgb(0, 223, 0);
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.195);
+  margin-top: -60px;
+  margin-bottom: -60px;
+  z-index: -30;
+}
+
+.verde{
+  color: rgb(0, 223, 0);
 }
