@@ -96,3 +96,43 @@ AddToCart.forEach((button) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
+
+fetch('https://fakestoreapi.com/products')
+  .then(res => res.json())
+  .then(json => {
+    console.log(json); // Agrega este console.log
+  })
+  .catch(error => {
+    console.error('Se produjo un error:', error);
+  });
+
+// Función para cargar los nombres de productos de la API y mostrarlos en la cinta
+async function loadProductNames() {
+  const productCinta = document.getElementById('productCinta');
+  
+  try {
+      const response = await fetch('https://fakestoreapi.com/products');
+      if (response.ok) {
+          const products = await response.json();
+          const productNames = products.map(product => product.title).join(' - ');
+          productCinta.textContent = productNames;
+      } else {
+          productCinta.textContent = 'Error al cargar los productos';
+      }
+  } catch (error) {
+      productCinta.textContent = 'Error al cargar los productos';
+      console.error('Se produjo un error:', error);
+  }
+}
+
+// Inicia la carga de nombres de productos y la animación de la cinta cuando la página se carga
+window.addEventListener('load', () => {
+  loadProductNames();
+});
+
+
+
+
+
+
+
