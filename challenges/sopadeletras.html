@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa Letras</title>
+  <link rel="stylesheet" type="text/css" href="./sopaletras.css">
+</head>
+<body>
+    <h1>Sopa de Letras</h1>
+    <h2>Santiago Rendon Munera</h2>
+    <div id="word-list">
+      <label for="word-input">Ingresar palabras:</label>
+      <input type="text" id="word-input">
+      <button id="add-word">Agregar Palabra</button>
+      <button id="generate-puzzle">Generar Sopa de Letras</button>
+      <button id="randomize-puzzle">Sopa de Letras Aleatoria</button>
+      <button id="solve-puzzle">Resolver Sopa de Letras</button>
+    </div>
+    <div id="word-display">
+      <p>Palabras a buscar:</p>
+      <ul id="word-list-display"></ul>
+    </div>
+    <div class="contenedor">
+        <div id="puzzle"></div>
+    </div>
+
+  <script src="./resources/sopadeletras/sopadeletras.js"></script>
+</body>
+</html>

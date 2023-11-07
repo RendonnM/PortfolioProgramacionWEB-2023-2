@@ -1983,13 +1983,15 @@ body {
 }
 
 .design4 {
-    background-image: url(./resources/nohay.png);
+    background-image: url(./resources/boxing.png);
     background-size: 100% 100%;
 }
 
 .design5 {
-    background-image: url(./resources/nohay.png);
-    background-size: 100% 100%;
+    background-image: url(./resources/appprestacion.png);
+    background-size: 200% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .consultation1 {
@@ -2045,16 +2047,6 @@ body {
     background-size: 100% 100%;
 }
 
-.workshop4 {
-    background-image: url(./resources/nohay.png);
-    background-size: 100% 100%;
-}
-
-.workshop5 {
-    background-image: url(./resources/nohay.png);
-    background-size: 100% 100%;
-}
-
 .challenge1 {
     justify-items: center;
     background-image: url(./resources/ch1.png);
@@ -2081,7 +2073,7 @@ body {
 }
 
 .challenge5 {
-    background-image: url(./resources/nohay.png);
+    background-image: url(./resources/sopal.webp);
     background-size: 100% 100%;
 }
 

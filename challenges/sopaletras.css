@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #word-list {
+    margin-top: 20px;
+  }
+  
+  #word-input {
+    padding: 5px;
+  }
+  
+  #add-word, #generate-puzzle, #randomize-puzzle {
+    padding: 5px 10px;
+    margin-left: 5px;
+  }
+  
+  #puzzle {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Cambia el número 10 por el tamaño deseado */
+    gap: 2px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  td.selected {
+    background-color: yellow;
+  }
+
+  .contenedor{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+  }
+  
