@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Regla de Tres</title>
+    <link rel="stylesheet" href="./taller2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Taller de Regla de Tres</h1>
+        <h2 style="display: flex;flex-direction: row;justify-content: center;">Santiago Rendon Munera</h2>
+
+        <!-- Ejercicio 1 -->
+        <div class="exercise">
+            <h2>Ejercicio 1</h2>
+            <p>Si 8 metros de manguera me cuestan $560, ¿Cuál será el precio de 20 metros de la misma manguera?</p>
+            <button onclick="ejercicio1()">Calcular</button>
+            <p id="resultado1"></p>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="exercise">
+            <h2>Ejercicio 2</h2>
+            <p>En una fábrica 12 obreros hacen cierto trabajo en 15 horas. ¿Cuánto tiempo demoran 5 obreros en efectuar
+                el mismo trabajo?</p>
+            <button onclick="ejercicio2()">Calcular</button>
+            <p id="resultado2"></p>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="exercise">
+            <h2>Ejercicio 3</h2>
+            <p>Si un obrero tiene el salario de $5000 por década (diez días) ¿Cuál es el salario total en 2 meses, si se
+                le descuentan 6 días, de los cuales no asistió a su trabajo?</p>
+            <button onclick="ejercicio3()">Calcular</button>
+            <p id="resultado3"></p>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="exercise">
+            <h2>Ejercicio 4</h2>
+            <p>El corazón de un hombre adulto bombea 15 litros de sangre en 3 minutos. ¿En cuántas horas bombea 1200
+                litros?</p>
+            <button onclick="ejercicio4()">Calcular</button>
+            <p id="resultado4"></p>
+        </div>
+
+        <!-- Ejercicio 5 -->
+        <div class="exercise">
+            <h2>Ejercicio 5</h2>
+            <p>Un grifo arroja 100 litros por minuto, y llena una piscina en 7 horas 12 minutos. ¿Qué cantidad de agua
+                debe arrojar el grifo por minuto para llenar la piscina en 12 horas?</p>
+            <button onclick="ejercicio5()">Calcular</button>
+            <p id="resultado5"></p>
+        </div>
+
+        <!-- Ejercicio 6 -->
+        <div class="exercise">
+            <h2>Ejercicio 6</h2>
+            <p>10 canecas de combustible de 15 galones cuestan $10500. ¿Cuánto cuestan 8 canecas de 55 galones de
+                combustible si el precio por galón es igual?</p>
+            <button onclick="ejercicio6()">Calcular</button>
+            <p id="resultado6"></p>
+        </div>
+
+        <!-- Ejercicio 7 -->
+        <div class="exercise">
+            <h2>Ejercicio 7</h2>
+            <p>En un juzgado con 8 máquinas se escriben 120 folios si se trabaja 5 horas diarias. ¿Cuántos folios se
+                pueden escribir con 20 máquinas si se trabaja el doble del tiempo diariamente bajo las mismas
+                condiciones?</p>
+            <button onclick="ejercicio7()">Calcular</button>
+            <p id="resultado7"></p>
+        </div>
+
+        <!-- Ejercicio 8 -->
+        <div class="exercise">
+            <h2>Ejercicio 8</h2>
+            <p>Un grupo de 45 excursionistas tienen víveres para 40 días a una razón de 900 gramos por día. ¿Cuál debe
+                ser la razón diaria, si al iniciar la excursión se incrementa el grupo en 5 personas y se amplía el
+                tiempo a 2 meses?</p>
+            <button onclick="ejercicio8()">Calcular</button>
+            <p id="resultado8"></p>
+        </div>
+
+        <!-- Ejercicio 9 -->
+        <div class="exercise">
+            <h2>Ejercicio 9</h2>
+            <p>Tres mecanógrafas tardaron 10 días trabajando 6 horas diarias para mecanografiar un libro. ¿Cuántos días
+                tardarán 8 mecanógrafas trabajando 5 horas diarias para realizar el trabajo?</p>
+            <button onclick="ejercicio9()">Calcular</button>
+            <p id="resultado9"></p>
+        </div>
+
+        <!-- Ejercicio 10 -->
+        <div class="exercise">
+            <h2>Ejercicio 10</h2>
+            <p>En una fábrica de envases plásticos 5 máquinas producen 75000 unidades en 3 días. ¿Cuántas máquinas,
+                iguales a las anteriores, se deben poner a funcionar para atender un pedido de 200000 envases en 2 días?
+            </p>
+            <button onclick="ejercicio10()">Calcular</button>
+            <p id="resultado10"></p>
+        </div>
+
+        <!-- Ejercicio 11 -->
+        <div class="exercise">
+            <h2>Ejercicio 11</h2>
+            <p>Para construir una piscina de 400KL de capacidad, 10 obreros que trabajaron 8 horas diarias tardaron 60
+                días. ¿Cuántos días tardarían 6 obreros trabajando 6 horas diarias para construir una piscina de 300KL?
+            </p>
+            <button onclick="ejercicio11()">Calcular</button>
+            <p id="resultado11"></p>
+        </div>
+
+        <!-- Ejercicio 12 -->
+        <div class="exercise">
+            <h2>Ejercicio 12</h2>
+            <p>Calcula el término desconocido en cada una de las siguientes proporciones:</p>
+            <p>a. - 6.30 - 18</p>
+            <p>Resultado a: <span id="resultado12a"></span></p>
+            <p>b. - 3 - 20</p>
+            <p>Resultado b: <span id="resultado12b"></span></p>
+            <p>c. 10 - 20</p>
+            <p>Resultado c: <span id="resultado12c"></span></p>
+            <button onclick="ejercicio12()">Calcular</button>
+        </div>
+    </div>
+    </div>
+    <script src="./taller2.js"></script>
+</body>
+
+</html>

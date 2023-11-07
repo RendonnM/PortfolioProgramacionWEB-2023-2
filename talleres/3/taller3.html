@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas y respuestas</title>
+    <link rel="stylesheet" href="./taller3.css">
+</head>
+<body>
+    <header>
+        <h1>Preguntas y respuestas</h1>
+        <h2>Santiago Rendon Munera</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#terminos">Términos y Definiciones</a></li>
+            <li><a href="#preguntas">Preguntas y Respuestas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="terminos">
+            <h2>Términos y Definiciones</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado utilizado para crear páginas web.</dd>
+                
+                <dt>CSS</dt>
+                <dd>Lenguaje utilizado para definir el estilo y la presentación de una página web.</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación ampliamente utilizado para agregar interactividad a sitios web.</dd>
+                <!-- Agrega más términos y definiciones según sea necesario -->
+            </dl>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas y Respuestas</h2>
+            
+            <!-- Pregunta de selección única -->
+            <div class="pregunta">
+                <p>Pregunta 1: ¿Qué lenguaje se utiliza para crear páginas web?</p>
+                <input type="radio" name="p1" value="html" data-correcta="true"> HTML<br>
+                <input type="radio" name="p1" value="css" data-correcta="false"> CSS<br>
+                <input type="radio" name="p1" value="javascript" data-correcta="false"> JavaScript<br>
+            </div>
+
+            <!-- Pregunta de selección múltiple -->
+            <div class="pregunta">
+                <p>Pregunta 2: ¿Cuáles son lenguajes de programación web?</p>
+                <input type="checkbox" name="p2" value="html" data-correcta="true"> HTML<br>
+                <input type="checkbox" name="p2" value="css" data-correcta="true"> CSS<br>
+                <input type="checkbox" name="p2" value="javascript" data-correcta="true"> JavaScript<br>
+                <input type="checkbox" name="p2" value="python" data-correcta="false"> Python<br>
+            </div>
+
+            <!-- Pregunta verdadero/falso -->
+            <div class="pregunta">
+                <p>Pregunta 3: JavaScript es un lenguaje de programación ampliamente utilizado para agregar interactividad a sitios web. (Verdadero/Falso)</p>
+                <input type="radio" name="p3" value="verdadero" data-correcta="true"> Verdadero<br>
+                <input type="radio" name="p3" value="falso" data-correcta="false"> Falso<br>
+            </div>
+            
+            <button id="verificar">Verificar Respuestas</button>
+        </section>
+
+        <p id="puntaje"></p>
+    </main>
+
+    <footer>
+        <p>&copy; SRM 2023</p>
+    </footer>
+
+    <script src="./taller3.js"></script>
+</body>
+</html>

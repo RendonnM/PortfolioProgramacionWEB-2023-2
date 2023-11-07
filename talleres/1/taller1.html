@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="taller1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ejercicios JavaScript</h1>
+        <h2 style="display: flex;flex-direction: row;justify-content: center;">Santiago Rendon Munera</h2>
+
+        <!-- Ejercicio 1 -->
+        <div class="exercise">
+            <h2>Ejercicio 1</h2>
+            <p class="ejerp">Solicita un nombre, la edad y muestra por consola el mensaje "Hola ____, tienes ____ años y
+                el año que
+                viene tendrás ____ años" Realiza el ejercicio con prompt(mensaje) y haz uso de los template strings</p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad">
+            <button onclick="ejercicio1()">Calcular</button>
+            <p id="resultado1"></p>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="exercise">
+            <h2>Ejercicio 2</h2>
+            <p class="ejerp">Escribe un programa que pueda calcular el área de 3 figuras geométricas, triángulo,
+                rectángulo y círculo. En primer lugar pregunta de qué figura se quiere calcular el área, después
+                solicita los datos que necesites para calcularlo. triángulo = b * h/2 rectángulo = b * h círculo = π *
+                r2 (pi * radio al cuadrado)</p>
+            <label for="figura">Figura:</label>
+            <select id="figura" onchange="mostrarInputs()">
+                <option value="triangulo">Triángulo</option>
+                <option value="rectangulo">Rectángulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+            <div id="trianguloInputs" style="display: none;">
+                <label for="baseTriangulo">Base:</label>
+                <input type="number" id="baseTriangulo">
+                <label for="alturaTriangulo">Altura:</label>
+                <input type="number" id="alturaTriangulo">
+            </div>
+            <div id="rectanguloInputs" style="display: none;">
+                <label for="baseRectangulo">Base:</label>
+                <input type="number" id="baseRectangulo">
+                <label for="alturaRectangulo">Altura:</label>
+                <input type="number" id="alturaRectangulo">
+            </div>
+            <div id="circuloInputs" style="display: none;">
+                <label for="radioCirculo">Radio:</label>
+                <input type="number" id="radioCirculo">
+            </div>
+            <button onclick="ejercicio2()">Calcular</button>
+            <p id="resultado2"></p>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="exercise">
+            <h2>Ejercicio 3</h2>
+            <p class="ejerp">Solicita un número e imprime todos los números pares e impares desde 1 hasta ese número con
+                el mensaje "es par" o "es impar" si el número es 5 el resultado será: 1 - es impar 2 - es par 3 - es
+                impar 4 - es par 5 - es impar</p>
+            <label for="numeroEj3">Número:</label>
+            <input type="number" id="numeroEj3">
+            <button onclick="ejercicio3()">Calcular</button>
+            <p id="resultado3"></p>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="exercise">
+            <h2>Ejercicio 4</h2>
+            <p class="ejerp">Escribe un programa que pida un número entero mayor que 1 y que escriba si el número primo
+                o no. Un número primo es aquel que solo es divisible por sí mismo y la unidad</p>
+            <label for="numeroEj4">Número mayor que 1:</label>
+            <input type="number" id="numeroEj4">
+            <button onclick="ejercicio4()">Calcular</button>
+            <p id="resultado4"></p>
+        </div>
+
+        <!-- Ejercicio 5 -->
+        <div class="exercise">
+            <h2>Ejercicio 5</h2>
+            <p class="ejerp">Escriba un programa que pida un número entero mayor que cero y calcule su factorial. El
+                factorial es el resultado de multiplicar ese número por sus anteriores hasta la unidad.
+                <br><br>!5 = 5*4*3*2*1 = 120
+            </p>
+            <label for="numeroEj5">Número mayor que 0:</label>
+            <input type="number" id="numeroEj5">
+            <button onclick="ejercicio5()">Calcular</button>
+            <p id="resultado5"></p>
+        </div>
+
+        <!-- Ejercicio 6 -->
+        <div class="exercise">
+            <h2>Ejercicio 6</h2>
+            <p class="ejerp">Escribe un programa que permita ir introduciendo una serie indeterminadade números mientras
+                su suma no supere 50. Cuando esto ocurra, se debe mostrar el total acumulado y el contador de cuantos
+                números se han introducido</p>
+            <button onclick="ejercicio6()">Ingresar números</button>
+            <p id="resultado6"></p>
+        </div>
+
+        <!-- Ejercicio 7 -->
+        <div class="exercise">
+            <h2>Ejercicio 7</h2>
+            <p class="ejerp">Crea 3 arrays. El primero tendra 5 números y el segundo se llamará pares y el tercero
+                impares, ambos estarán vacíos. Después multiplica cada uno de los números del primer array por un número
+                aleatorio entre 1 y 10, si el resultado es par guarda ese número en el array de pares y si es impar en
+                el array de impares. Muestra por consola: -la multiplicación que se produce junto con su resultado con
+                el formato 2 x 3 = 6 -el array de pares e impares. </p>
+            <button onclick="ejercicio7()">Calcular</button>
+            <p id="resultado7"></p>
+        </div>
+
+        <!-- Ejercicio 8 -->
+        <div class="exercise">
+            <h2>Ejercicio 8</h2>
+            <p class="ejerp">Dado un array de letras, solicita un número de DNI y calcula que letra le corresponde. El
+                número no puede ser negativo ni tener más de 8 dígitos. La posición de la letra es el resultado del
+                módulo del número introducido entre 23. <br><br>const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F',
+                'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];</p>
+            <label for="dni">Número de DNI:</label>
+            <input type="number" id="dni">
+            <button onclick="ejercicio8()">Calcular letra</button>
+            <p id="resultado8"></p>
+        </div>
+
+        <!-- Ejercicio 9 -->
+        <div class="exercise">
+            <h2>Ejercicio 9</h2>
+            <p class="ejerp">Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y
+                longitud de la palabra.</p>
+            <label for="palabra">Palabra:</label>
+            <input type="text" id="palabra">
+            <button onclick="ejercicio9()">Calcular</button>
+            <p id="resultado9"></p>
+        </div>
+
+        <!-- Ejercicio 10 -->
+        <div class="exercise">
+            <h2>Ejercicio 10</h2>
+            <p class="ejerp">Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "rosa"] determinar si un
+                color introducido por el usuario a través de un prompt se encuentra dentro del array o no.</p>
+            <label for="color">Color:</label>
+            <input type="text" id="color">
+            <button onclick="ejercicio10()">Verificar</button>
+            <p id="resultado10"></p>
+        </div>
+    </div>
+
+    <script src="./taller1.js"></script>
+</body>
+
+</html>

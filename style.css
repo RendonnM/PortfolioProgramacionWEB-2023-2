@@ -2013,18 +2013,35 @@ body {
     background-size: 100% 100%;
 }
 
-.workshop1 {
-    background-image: url(./resources/nohay.png);
+.consultation5 {
+    background-image: url(./resources/consulta5.webp);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.consultation6 {
+    background-image: url(./resources/consulta6.png);
+    background-size: 30% 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.workshop1 {
+    background-image: url(./resources/JS.png);
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .workshop2 {
-    background-image: url(./resources/nohay.png);
-    background-size: 100% 100%;
+    background-image: url(./resources/JS.png);
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .workshop3 {
-    background-image: url(./resources/nohay.png);
+    background-image: url(./resources/pyr.jpeg);
     background-size: 100% 100%;
 }
 
